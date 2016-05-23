@@ -1,0 +1,33 @@
+.bell-g{
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+    font-family: Microsoft YaHei, SimSun, "Droid Sans", Helvetica, Arial, sans-serif;
+}
+
+.bell-flexG{
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    
+    -ms-align-content: flex-start;
+	-webkit-align-content: flex-start;
+	align-content: flex-start;
+}
+
+.bell-u {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.bell-g [class *= "bell-u"] {
+    font-family: Microsoft YaHei, SimSun,sans-serif;
+}

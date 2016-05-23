@@ -1,0 +1,8 @@
+.btn-default[data-disabled],
+.btn-default[data-disabled]:hover,
+.btn-default-disabled,
+.btn-default-disabled:hover,
+.btn-default-disabled:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+}

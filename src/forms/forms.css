@@ -1,0 +1,78 @@
+.bell-form input[type="text"],
+.bell-form input[type="password"],
+.bell-form input[type="email"],
+.bell-form input[type="url"],
+.bell-form input[type="date"],
+.bell-form input[type="month"],
+.bell-form input[type="time"],
+.bell-form input[type="datetime"],
+.bell-form input[type="datetime-local"],
+.bell-form input[type="week"],
+.bell-form input[type="number"],
+.bell-form input[type="search"],
+.bell-form input[type="tel"],
+.bell-form input[type="color"],
+.bell-form select,
+.bell-form textarea {
+    display: inline-block;
+    vertical-align: middle;
+    padding:0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bell-form input:not([type]) {
+    display: inline-block;
+    padding:0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bell-form input[type="text"]:focus,
+.bell-form input[type="password"]:focus,
+.bell-form input[type="email"]:focus,
+.bell-form input[type="url"]:focus,
+.bell-form input[type="date"]:focus,
+.bell-form input[type="month"]:focus,
+.bell-form input[type="time"]:focus,
+.bell-form input[type="datetime"]:focus,
+.bell-form input[type="datetime-local"]:focus,
+.bell-form input[type="week"]:focus,
+.bell-form input[type="number"]:focus,
+.bell-form input[type="search"]:focus,
+.bell-form input[type="tel"]:focus,
+.bell-form input[type="color"]:focus,
+.bell-form select:focus,
+.bell-form textarea:focus {
+    outline: 0;
+}
+.bell-form input:not([type]):focus {
+    outline: 0;
+}
+
+.bell-form input[type="text"][disabled],
+.bell-form input[type="password"][disabled],
+.bell-form input[type="email"][disabled],
+.bell-form input[type="url"][disabled],
+.bell-form input[type="date"][disabled],
+.bell-form input[type="month"][disabled],
+.bell-form input[type="time"][disabled],
+.bell-form input[type="datetime"][disabled],
+.bell-form input[type="datetime-local"][disabled],
+.bell-form input[type="week"][disabled],
+.bell-form input[type="number"][disabled],
+.bell-form input[type="search"][disabled],
+.bell-form input[type="tel"][disabled],
+.bell-form input[type="color"][disabled],
+.bell-form select[disabled],
+.bell-form textarea[disabled] {
+    cursor: not-allowed;
+}
+
+.bell-form input:not([type])[disabled] {
+    cursor: not-allowed;
+}

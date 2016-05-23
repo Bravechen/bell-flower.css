@@ -1,0 +1,30 @@
+.btn-default{
+    padding: 0.5em 1em;
+    color:#333333;
+    border: 1px solid #999999;  /*IE 6/7/8*/
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.btn-default-hover,
+.btn-default:hover,
+.btn-default:focus {
+    color:#ffffff;
+    background-color:#333333;
+}
+.btn-default[data-disabled],
+.btn-default[data-disabled]:hover,
+.btn-default-disabled,
+.btn-default-disabled:hover,
+.btn-default-disabled:focus {
+    background:#ffffff;
+    color:#333333;
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+}
+.btn-default-animate{
+    -webkit-transition:background-color,color 0.5s ease;
+    -moz-transition:background-color,color 0.5s ease;
+    transition:background-color,color 0.5s ease;
+}

@@ -1,0 +1,695 @@
+
+/**
+    bellflower.css基础
+    @author Brave Chan on 2016.4.20
+    @describtion This css base on pure.css (http://purecss.io/) & normalize.css
+**/
+/*=================bell-base======================>>>>>>*/
+/*======normalize.css=======*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+abbr,
+address,
+mark,
+meter,
+output,
+progress,
+time{
+    display:block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,strong {
+    font-weight: bold;
+}
+
+i,em{
+    font-style:normal;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+menu,ol,ul {
+    margin:0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+    vertical-align: baseline;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**隐藏元素**/
+.hidden,
+[hidden] {
+    display: none !important;
+}
+.bell-img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+/*<<<<<==============================================*/
+
+/*=================button-base======================>>>>>>*/
+.bell-btn {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;    
+    
+    cursor: pointer;
+    
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.bell-btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a.bell-btn{
+    text-decoration:none;
+}
+
+.bell-btn:focus {
+    outline: 0;
+}
+.bell-btn-block{
+    display:block;
+    width:100%;
+}
+/*<<<<<==============================================*/
+
+/*=================form-base======================>>>>>>*/
+.bell-form input[type="text"],
+.bell-form input[type="password"],
+.bell-form input[type="email"],
+.bell-form input[type="url"],
+.bell-form input[type="date"],
+.bell-form input[type="month"],
+.bell-form input[type="time"],
+.bell-form input[type="datetime"],
+.bell-form input[type="datetime-local"],
+.bell-form input[type="week"],
+.bell-form input[type="number"],
+.bell-form input[type="search"],
+.bell-form input[type="tel"],
+.bell-form input[type="color"],
+.bell-form select,
+.bell-form textarea {
+    display: inline-block;
+    vertical-align: middle;
+    padding:0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bell-form input:not([type]) {
+    display: inline-block;
+    padding:0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bell-form input[type="text"]:focus,
+.bell-form input[type="password"]:focus,
+.bell-form input[type="email"]:focus,
+.bell-form input[type="url"]:focus,
+.bell-form input[type="date"]:focus,
+.bell-form input[type="month"]:focus,
+.bell-form input[type="time"]:focus,
+.bell-form input[type="datetime"]:focus,
+.bell-form input[type="datetime-local"]:focus,
+.bell-form input[type="week"]:focus,
+.bell-form input[type="number"]:focus,
+.bell-form input[type="search"]:focus,
+.bell-form input[type="tel"]:focus,
+.bell-form input[type="color"]:focus,
+.bell-form select:focus,
+.bell-form textarea:focus {
+    outline: 0;
+}
+.bell-form input:not([type]):focus {
+    outline: 0;
+}
+
+.bell-form input[type="text"][disabled],
+.bell-form input[type="password"][disabled],
+.bell-form input[type="email"][disabled],
+.bell-form input[type="url"][disabled],
+.bell-form input[type="date"][disabled],
+.bell-form input[type="month"][disabled],
+.bell-form input[type="time"][disabled],
+.bell-form input[type="datetime"][disabled],
+.bell-form input[type="datetime-local"][disabled],
+.bell-form input[type="week"][disabled],
+.bell-form input[type="number"][disabled],
+.bell-form input[type="search"][disabled],
+.bell-form input[type="tel"][disabled],
+.bell-form input[type="color"][disabled],
+.bell-form select[disabled],
+.bell-form textarea[disabled] {
+    cursor: not-allowed;
+}
+
+.bell-form input:not([type])[disabled] {
+    cursor: not-allowed;
+}
+/*<<<<<==============================================*/
+
+/*=================grids-core======================>>>>>>*/
+.bell-g{
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+    font-family: Microsoft YaHei, SimSun, "Droid Sans", Helvetica, Arial, sans-serif;
+}
+
+.bell-flexG{
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    
+    -ms-align-content: flex-start;
+	-webkit-align-content: flex-start;
+	align-content: flex-start;
+}
+
+.bell-u {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.bell-g [class *= "bell-u"] {
+    font-family: Microsoft YaHei, SimSun,sans-serif;
+}
+/*<<<<<==============================================*/
+
+/*=================grids======================>>>>>>*/
+.bell-u-1-24,
+.bell-u-5-24,
+.bell-u-7-24,
+.bell-u-11-24,
+.bell-u-13-24,
+.bell-u-17-24,
+.bell-u-19-24,
+.bell-u-23-24,
+.bell-u-1-12,
+.bell-u-5-12,
+.bell-u-7-12,
+.bell-u-11-12,
+.bell-u-1-10,
+.bell-u-3-10,
+.bell-u-7-10,
+.bell-u-9-10,
+.bell-u-1-8,
+.bell-u-3-8,
+.bell-u-5-8,
+.bell-u-7-8,
+.bell-u-6-7,
+.bell-u-5-7,
+.bell-u-4-7,
+.bell-u-3-7,
+.bell-u-2-7,
+.bell-u-1-7,
+.bell-u-1-6,
+.bell-u-5-6,
+.bell-u-1-5,
+.bell-u-2-5,
+.bell-u-3-5,
+.bell-u-4-5,
+.bell-u-1-4,
+.bell-u-3-4,
+.bell-u-1-3,
+.bell-u-2-3,
+.bell-u-1-2,
+.bell-u-1{
+    display:inline-block;
+    zoom:1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+/*========================================*/
+.bell-u-1-24 {
+    width: 4.1667%;
+}
+.bell-u-5-24 {
+    width: 20.8333%;
+}
+.bell-u-7-24 {
+    width: 29.1667%;
+}
+.bell-u-11-24 {
+    width: 45.8333%;
+}
+.bell-u-13-24 {
+    width: 54.1667%;
+}
+.bell-u-17-24 {
+    width: 70.8333%;
+}
+
+.bell-u-19-24 {
+    width: 79.1667%;
+}
+.bell-u-23-24 {
+    width: 95.8333%;
+}
+/*========================================*/
+.bell-u-1-10{
+    width:10%;
+}
+.bell-u-3-10{
+    width:10%;
+}
+.bell-u-7-10{
+    width:70%;
+}
+.bell-u-9-10{
+    width:90%;
+}
+/*========================================*/
+.bell-u-1-12 {
+    width: 8.3333%;
+}
+.bell-u-5-12 {
+    width: 41.6667%;
+}
+.bell-u-7-12 {
+    width: 58.3333%;
+}
+.bell-u-11-12{
+    width: 91.6667%;
+}
+/*========================================*/
+.bell-u-1-8 {
+    width: 12.5000%;
+}
+.bell-u-3-8{
+    width: 37.5000%;
+}
+.bell-u-5-8 {
+    width: 62.5000%;
+}
+.bell-u-7-8 {
+    width: 87.5000%;
+}
+/*========================================*/
+.bell-u-6-7{
+    width:85.716%;
+}
+.bell-u-5-7{
+    width:71.43%;
+}
+.bell-u-4-7{
+    width:57.144%;
+}
+.bell-u-3-7{
+    width:42.858%;
+}
+.bell-u-2-7{
+    width:28.572%;
+}
+.bell-u-1-7{
+    width:14.286%;
+}
+/*========================================*/
+.bell-u-1-6{
+    width: 16.6667%;
+}
+.bell-u-5-6{
+    width: 83.3333%;
+}
+/*========================================*/
+.bell-u-1-5{
+    width:20%;
+}
+
+.bell-u-2-5{
+    width:40%;
+}
+
+.bell-u-3-5{
+    width:60%;
+}
+
+.bell-u-4-5{
+    width:80%;
+}
+/*========================================*/
+.bell-u-1-4{
+    width:25%;
+}
+.bell-u-3-4{
+    width:75%;
+}
+/*========================================*/
+.bell-u-1-3{
+    width:33.3333%;
+}
+.bell-u-2-3{
+    width: 66.6667%;
+}
+/*========================================*/
+.bell-u-1-2{
+    width:50%;
+}
+/*========================================*/
+
+.bell-u-1{
+    width:100%;
+}
+/*<<<<<==============================================*/
+
+/*=================nav-core======================>>>>>>*/
+.bell-nav {
+    overflow:hidden;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bell-nav-fixed,.bell-nav-fixed-lb,.bell-nav-fixed-rt,.bell-nav-fixed-rb{
+    position:fixed;
+    z-index:3;
+}
+.bell-nav-fixed{
+    left: 0;
+    top: 0;    
+}
+
+.bell-nav-fixed-lb{    
+    left:0;
+    bottom:0;    
+}
+
+.bell-nav-fixed-rt{   
+    right:0;
+    top:0;    
+}
+
+.bell-nav-fixed-rb{    
+    right:0;
+    bottom:0;    
+}
+
+.bell-nav-h{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.bell-nav-h .bell-nav-list{
+    display:inline-block;
+}
+.bell-nav-h .bell-nav-heading,.bell-nav-h>.bell-nav-item,.bell-nav-h .bell-nav-list .bell-nav-item{
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.bell-nav-v{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.bell-nav-v .bell-nav-list{
+    display:block;
+}
+.bell-nav-v .bell-nav-heading,.bell-nav-v>.bell-nav-item,.bell-nav-v .bell-nav-list .bell-nav-item{
+    display: block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.bell-nav-list,
+.bell-nav-item {
+    position: relative;
+}
+
+/*.bell-nav-item {
+    padding: 0;
+    margin: 0;
+}*/
+
+/*.bell-nav-link,*/
+.bell-nav-heading {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+/*<<<<<==============================================*/
+/*=================util======================>>>>>>*/
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix{
+    *zoom:1;
+}
+.hide-1{
+    position:absolute;
+    top:-99999px;
+    left:-99999px;
+}
+/*=================util======================>>>>>>*/

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Component</title>
+
+    <link href="../src/bellflower.css" type="text/css" rel="stylesheet" />
+    <link href="../src/buttons/button-default.css" type="text/css" rel="stylesheet" />
+    <link href="../src/forms/forms-default.css" type="text/css" rel="stylesheet" />
+    <!--[if lte IE 8]>
+        <link href="../src/bellflower-oldPatch.css" type="text/css" rel="stylesheet" />
+        <link href="../src/buttons/button-default-oldPatch.css" type="text/css" rel="stylesheet" />
+    <![endif]-->
+    
+    <link href="./test1.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="test-content">
+        <h3>Buttons</h3>
+        <hr />
+        <a href="javascript:;" class="bell-btn btn-default">这是一个很长很长很长的按钮</a>
+        <button class="bell-btn btn-default">按钮</button>
+        <a href="javascript:;" class="bell-btn btn-default btn-default-disabled">禁用的按钮</a>
+        <a href="javascript:;" class="bell-btn btn-default" hidden>隐藏的按钮</a>
+        <a href="javascript:;" class="bell-btn btn-default btn-default-animate">有动画的按钮</a>
+        <div style="width: 500px;margin-top:20px;">
+            <a href="javascript:;" class="bell-btn btn-default bell-btn-block" >充满整行的块级按钮</a>
+        </div>
+        <h3>Grids</h3>
+        <hr />
+        <h4>Grids-2等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-2"><span>1-2</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-2"><span>1-2</span></li>
+        </ul>
+        <h4>Grids-3等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-3"><span>1-3</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-3"><span>1-3</span></li>
+            <li style="background:#a1b2d4;" class="bell-u-1-3"><span>1-3</span></li>
+        </ul>
+        <h4>Grids-4等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-4"><span>1-4</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-4"><span>1-4</span></li>
+            <li style="background:#a1b2d4;" class="bell-u-1-4"><span>1-4</span></li>
+            <li style="background:#efeccd;" class="bell-u-1-4"><span>1-4</span></li>
+        </ul>
+        <ul style="margin-top:10px;" class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-4"><span>1-4</span></li>
+            <li style="background:#e9dfea;" class="bell-u-3-4"><span>3-4</span></li>
+        </ul>
+        <h4>Grids-5等分</h4>
+        <ul style="margin-top:10px;" class="bell-g test-list">
+            <li style="background:#1dade5;" class="bell-u-1-5"><span>1-4</span></li>
+            <li style="background:#facb7e;" class="bell-u-1-5"><span>1-5</span></li>
+            <li style="background:#7dc062;" class="bell-u-1-5"><span>1-5</span></li>
+            <li style="background:#efeccd;" class="bell-u-1-5"><span>1-5</span></li>
+            <li style="background:#e26e47;" class="bell-u-1-5"><span>1-5</span></li>
+        </ul>
+        <ul style="margin-top:10px;" class="bell-g test-list">
+            <li class="bell-u-1-5"><span>1-5</span></li>
+            <li class="bell-u-3-5"><span>3-5</span></li>
+            <li class="bell-u-1-5"><span>1-5</span></li>
+        </ul>
+        <h4>Grids-6等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-6"><span>1-6</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-6"><span>1-6</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-6"><span>1-6</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-6"><span>1-6</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-6"><span>1-6</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-6"><span>1-6</span></li>
+        </ul>
+        <ul style="margin-top:10px;" class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-6"><span>1-6</span></li>
+            <li style="background:#e9dfea;" class="bell-u-5-6"><span>5-6</span></li>
+        </ul>
+        <h4>Grids7等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-7"><span>1-7</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-7"><span>1-7</span></li>
+            <li style="background:#006230;" class="bell-u-1-7"><span>1-7</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-7"><span>1-7</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-7"><span>1-7</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-7"><span>1-7</span></li>
+            <li style="background:#e9dfda;" class="bell-u-1-7"><span>1-7</span></li>
+        </ul>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-7"><span>1-7</span></li>
+            <li style="background:#e9dfda;" class="bell-u-6-7"><span>6-7</span></li>
+        </ul>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-2-7"><span>2-7</span></li>
+            <li style="background:#e9dfda;" class="bell-u-5-7"><span>5-7</span></li>
+        </ul>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-3-7"><span>3-7</span></li>
+            <li style="background:#e9dfda;" class="bell-u-4-7"><span>4-7</span></li>
+        </ul>
+        <h4>Grids-8等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-8"><span>1-8</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-8"><span>1-8</span></li>
+            <li style="background:#006230;" class="bell-u-1-8"><span>1-8</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-8"><span>1-8</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-8"><span>1-8</span></li>
+            <li style="background:#e9dfea;" class="bell-u-3-8"><span>3-8</span></li>
+        </ul>
+        <h4>Grids-10等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#006230;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#006230;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-10"><span>1-10</span></li>
+        </ul>
+        <ul style="margin-top:10px;" class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#006230;" class="bell-u-1-10"><span>1-10</span></li>
+            <li style="background:#5976ae;" class="bell-u-7-10"><span>7-10</span></li>
+        </ul>
+        <h4>Grids-12等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#006230;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#006230;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-12"><span>1-12</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-12"><span>1-12</span></li>
+        </ul>
+        <ul style="margin-top:10px;" class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-5-12"><span>5-12</span></li>
+            <li style="background:#5976ae;" class="bell-u-7-12"><span>7-12</span></li>
+        </ul>
+        <h4>Grids-24等分</h4>
+        <ul class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#006230;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#006230;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#006230;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#aad2df;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#f1e0cc;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#006230;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5793ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#5976ae;" class="bell-u-1-24"><span>1-24</span></li>
+            <li style="background:#e9dfea;" class="bell-u-1-24"><span>1-24</span></li>
+        </ul>
+        <ul style="margin-top:10px;" class="bell-g test-list">
+            <li style="background:#aad2df;" class="bell-u-11-24"><span>11-24</span></li>
+            <li style="background:#5976ae;" class="bell-u-13-24"><span>13-24</span></li>
+        </ul>
+        <h3 style="margin-top:20px;">Navigation</h3>
+        <hr />
+        <div class="bell-nav test-nav bell-nav-h">
+            <span class="bell-nav-heading">Navigation Bar</span>
+            <ul class="bell-nav-list">
+                <li class="bell-nav-item"><a class="bell-btn" href="javascript:;">One</a></li>
+                <li class="bell-nav-item"><a class="bell-btn" href="javascript:;">Two</a></li>
+                <li class="bell-nav-item"><a class="bell-btn" href="javascript:;">Three</a></li>
+                <li class="bell-nav-item"><a class="bell-btn" href="javascript:;">Four</a></li>
+                <li class="bell-nav-item"><a class="bell-btn" href="javascript:;">Five</a></li>
+            </ul>
+        </div>
+        <div class="bell-nav bell-nav-fixed bell-nav-h test-nav-fixed">
+            <span class="bell-nav-heading">Navigation Bar</span>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">One</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Two</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Three</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Four</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Five</a></div>
+        </div>
+        <div class="bell-nav bell-nav-v bell-nav-fixed-rt test-nav-fixed test-nav-fixedRT">
+            <span class="bell-nav-heading">Navigation Bar</span>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">One</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Two</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Three</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Four</a></div>
+            <div class="bell-nav-item"><a class="bell-btn" href="javascript:;">Five</a></div>
+        </div>
+        <h3 style="margin-top:20px;">Forms</h3>
+        <hr />
+        <div class="bell-form bell-form-default text-fromList">
+            <div style="margin-top:10px;margin-bottom:10px;">
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>单行文本-正常
+                        <input class="bell-form-animate" type="text" value="" placeholder="something" />
+                    </label>
+                </div>
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>单行文本-禁用
+                        <input type="text" value="" placeholder="something" disabled />
+                    </label>
+                </div>
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>单行文本-错误
+                        <input class="bell-form-error" type="text" value="单行文本-错误" placeholder="something"  />
+                    </label>
+                </div>
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>单行文本-只读
+                        <input type="text" value="单行文本-只读" placeholder="something" readonly />
+                    </label>
+                </div>
+            </div>
+
+
+            <div style="margin-top:10px;margin-bottom:10px;">
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>文本域-正常
+                        <textarea class="bell-form-animate" type="text" value="" placeholder="something"></textarea>
+                    </label>
+                </div>
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>文本域-禁用
+                        <textarea type="text" value="" placeholder="something" disabled></textarea>
+                    </label>
+                </div>
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>文本域-错误
+                        <textarea class="bell-form-error" placeholder="something" >文本域-错误</textarea>
+                    </label>
+                </div>
+                <div style="margin-top:10px;margin-bottom:10px;">
+                    <label>文本域-只读
+                        <textarea placeholder="something" readonly >文本域-只读</textarea>
+                    </label>
+                </div>
+            </div>
+
+            <div style="margin-top:10px;margin-bottom:10px;">
+
+            </div>
+
+
+
+            <div style="margin-top:10px;margin-bottom:10px;">
+
+            </div>
+        </div>
+    </div>
+    <footer style="width:100%;height: 200px;"></footer>
+</body>
+</html>

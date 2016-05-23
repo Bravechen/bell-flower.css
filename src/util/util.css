@@ -1,0 +1,16 @@
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix{
+    *zoom:1;
+}
+
+.hide-1{
+    position:absolute;
+    top:-99999px;
+    left:-99999px;
+}

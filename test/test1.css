@@ -1,0 +1,93 @@
+body{
+    width:100%;
+}
+.test-content{
+    width:1000px;
+    margin:0 auto;
+    font-family: 'Microsoft YaHei';
+}
+
+.test-list{
+    height:56px;
+    background:#333333;
+    line-height:56px;
+}
+.test-list li{
+    text-align:center;
+    background:#cccccc;
+}
+.test-list li.bell-u-3-5{
+    color:#ffffff;
+    background: #63cbee;
+}
+
+.test-list span{
+
+}
+.test-nav{
+    border-radius:5px;
+    height:36px;
+    border:1px solid #1dade5;
+}
+.test-nav a.bell-btn{
+    padding:0 10px;
+    line-height:36px;
+    color:#5ea6ee;
+}
+.test-nav a.bell-btn:hover{
+    color:#ffffff ;
+    background:#5ea6ee;
+}
+.test-nav .bell-nav-heading{
+    color:#5ea6ee;
+    margin-left:20px;
+}
+.test-nav-fixed{
+    width:100%;
+    height:36px;
+    background:#333333;
+}
+.test-nav-fixed .bell-nav-heading{
+    color:#ffffff;
+    margin-left:20px;
+}
+.test-nav-fixed .bell-nav-item a.bell-btn{
+    padding:0 10px;
+    line-height:36px;
+    color:#ffffff;
+    *display:block;
+    /*width:100px;*/
+    /*height:36px;*/
+    /*background:#cccccc;*/
+}
+.test-nav-fixed .bell-nav-item a:hover{
+    color: #5ea6ee;
+    background:#ffffff;
+}
+
+.test-nav-fixedRT{
+    top:50%;
+    width:200px;
+    height:216px;
+}
+
+.test-nav-fixedRT .bell-nav-heading{
+    height:36px;
+    line-height:36px;
+    margin-left:10px;
+}
+.test-nav-fixed a.bell-btn{
+    width:100%;
+    text-align:left;
+    padding:0 10px;
+    line-height:36px;
+    color:#ffffff;
+}
+.test-nav-fixedRT a.bell-btn:hover{
+    width:100%;
+    color: #5ea6ee;
+    background:#ffffff;
+}
+.text-fromList{
+    width:100%;
+}

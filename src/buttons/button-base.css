@@ -1,0 +1,42 @@
+.bell-btn {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;    
+    
+    cursor: pointer;
+    
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.bell-btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a.bell-btn{
+    text-decoration:none;
+}
+
+.bell-btn:focus {
+    outline: 0;
+}
+.bell-btn-block{
+    display:block;
+    width:100%;
+}

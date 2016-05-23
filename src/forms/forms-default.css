@@ -1,0 +1,115 @@
+.bell-form-default input[type="text"],
+.bell-form-default input[type="password"],
+.bell-form-default input[type="email"],
+.bell-form-default input[type="url"],
+.bell-form-default input[type="date"],
+.bell-form-default input[type="month"],
+.bell-form-default input[type="time"],
+.bell-form-default input[type="datetime"],
+.bell-form-default input[type="datetime-local"],
+.bell-form-default input[type="week"],
+.bell-form-default input[type="number"],
+.bell-form-default input[type="search"],
+.bell-form-default input[type="tel"],
+.bell-form-default input[type="color"],
+.bell-form-default select,
+.bell-form-default textarea{
+    padding: 0.5em 0.6em;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.bell-form-animate{
+    -webkit-transition-property:border-color,background-color,color;
+    -moz-transition-property:border-color,background-color,color;
+    transition-property:border-color,background-color,color;
+    
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    transition-duration:0.5s;
+    
+    -webkit-transition-timing-function:ease;
+    -moz-transition-timing-function:ease;
+    transition-timing-function:ease;
+}
+
+.bell-form input:not([type]) {
+    padding: 0.5em 0.6em;    
+    border: 1px solid #333333;  
+    border-radius: 5px;
+}
+
+.bell-form input[type="color"] {
+    padding: 0.2em 0.5em;
+}
+
+.bell-form input[type="text"]:focus,
+.bell-form input[type="password"]:focus,
+.bell-form input[type="email"]:focus,
+.bell-form input[type="url"]:focus,
+.bell-form input[type="date"]:focus,
+.bell-form input[type="month"]:focus,
+.bell-form input[type="time"]:focus,
+.bell-form input[type="datetime"]:focus,
+.bell-form input[type="datetime-local"]:focus,
+.bell-form input[type="week"]:focus,
+.bell-form input[type="number"]:focus,
+.bell-form input[type="search"]:focus,
+.bell-form input[type="tel"]:focus,
+.bell-form input[type="color"]:focus,
+.bell-form select:focus,
+.bell-form textarea:focus {
+   border-color: #129FEA;
+}
+
+.bell-form input:not([type]):focus {
+    border-color: #129FEA;
+}
+
+.bell-form input[type="text"][disabled],
+.bell-form input[type="password"][disabled],
+.bell-form input[type="email"][disabled],
+.bell-form input[type="url"][disabled],
+.bell-form input[type="date"][disabled],
+.bell-form input[type="month"][disabled],
+.bell-form input[type="time"][disabled],
+.bell-form input[type="datetime"][disabled],
+.bell-form input[type="datetime-local"][disabled],
+.bell-form input[type="week"][disabled],
+.bell-form input[type="number"][disabled],
+.bell-form input[type="search"][disabled],
+.bell-form input[type="tel"][disabled],
+.bell-form input[type="color"][disabled],
+.bell-form select[disabled],
+.bell-form textarea[disabled] {
+    border-color:#cccccc;
+    background-color: #eeeeee;
+    color: #cccccc;
+}
+
+.bell-form-default input.bell-form-error,
+.bell-form-default textarea.bell-form-error{
+    border-color:#e26e47;
+    background-color:#fcebe6;    
+    color: #e26e47;
+}
+.bell-form-default input.bell-form-error:focus{
+    border-color:#e26e47;
+}
+
+.bell-form input:not([type])[disabled] {
+    border-color:#cccccc;
+    background-color: #eeeeee;
+    color: #cccccc;
+}
+
+.bell-form input[readonly],
+.bell-form select[readonly],
+.bell-form textarea[readonly] {
+    background-color: #ffffff; /* menu hover bg color */
+    color: #cccccc; /* menu text color */
+    border-color: #cccccc;
+}
+
+
